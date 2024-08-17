@@ -17,7 +17,7 @@ const MobileNavbar = () => {
 			<SheetContent className="flex flex-col">
 				{/* logo */}
 				<Link href={"/"}>
-					<div className="text-white text-2xl text-center mt-24 mb-24">
+					<div className="text-white text-3xl text-center mt-24 mb-24">
 						Vimal <span className="text-accent">.</span>
 					</div>
 				</Link>
