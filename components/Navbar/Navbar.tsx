@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const links = [
+export const links = [
 	{
 		name: "home",
 		path: "/"
@@ -40,4 +40,5 @@ const Navbar = () => {
 	)
 }
 
-export default Navbar
+export default Navbar;
+
