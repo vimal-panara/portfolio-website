@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header/Header";
+import PageTransition from "@/components/transitions/PageTransition";
+import StairTransition from "@/components/transitions/stairTransition/StairTransition";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +19,10 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-primary bg-primary">
         <Header />
-        {children}
+        <StairTransition />
+        <PageTransition >
+          {children}
+        </PageTransition>
       </body>
     </html>
   );
