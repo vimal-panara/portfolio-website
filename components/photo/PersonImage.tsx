@@ -11,7 +11,7 @@ const PersonImage = () => {
 				animate={{
 					opacity: 1,
 					transition: {
-						delay: 1.5,
+						delay: 2,
 						duration: 0.4,
 						ease: "easeInOut"
 					}
@@ -23,7 +23,7 @@ const PersonImage = () => {
 					animate={{
 						opacity: 1,
 						transition: {
-							delay: 2.0,
+							delay: 2.4,
 							duration: 0.4,
 							ease: "easeInOut"
 						}

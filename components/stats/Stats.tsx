@@ -7,7 +7,7 @@ type StatData = {
 	text: string
 }
 
-const stats = [
+const stats: Array<StatData> = [
 	{
 		num: 2,
 		text: "Years of experience"
@@ -33,15 +33,15 @@ const Stats = () => {
 				<div className="flex flex-wrap max-w-[80vw] xl:max-w-none gap-6 mx-auto mb-6">
 					{stats.map((item, index) => {
 						return <div
-							className="flex-1 flex gap-4 items-center justify-center xl:justify-start"
+							className="flex-1 flex gap-4 items-center justify-center xl:justify-start mx-1 xl:mx-0"
 							key={index}>
 							<CountUp
 								end={item.num}
 								duration={5}
 								delay={2}
-								className="text-4xl xl:text-6xl font-extrabold self-start"
+								className="text-4xl xl:text-6xl font-extrabold"
 							/>
-							<p className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80`}>
+							<p className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[160px]"} leading-snug text-white/80`}>
 								{item.text}
 							</p>
 						</div>
