@@ -18,7 +18,7 @@ const TransitionEffect = () => {
 					animate={{top: "100%"}}
 					exit={{top: ["100%", "0%"]}}
 					transition={{
-						duration: 0.4,
+						duration: 0.5,
 						ease: "easeInOut",
 						delay: calculateDelay(index) * 0.1
 					}}
