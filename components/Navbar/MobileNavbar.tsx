@@ -4,7 +4,7 @@ import { Sheet, SheetTrigger, SheetContent } from "../ui/sheet"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
 import { links } from "./Navbar"
-import { CiMenuFries } from "react-icons/ci"
+import { CiMenuFries } from "react-icons/ci";
 
 const MobileNavbar = () => {
 	const pathName = usePathname();
@@ -12,11 +12,11 @@ const MobileNavbar = () => {
 	return (
 		<Sheet>
 			<SheetTrigger className="flex justify-center items-center">
-				<CiMenuFries className="text-[32px] text-accent" />
+				<CiMenuFries className="text-[32px] text-accent"/>
 			</SheetTrigger>
 			<SheetContent className="flex flex-col">
 				{/* logo */}
-				<Link href={"/"}>
+				<Link href={"/"}	>
 					<div className="text-white text-3xl text-center mt-24 mb-24">
 						Vimal <span className="text-accent">.</span>
 					</div>
