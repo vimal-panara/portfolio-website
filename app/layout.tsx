@@ -16,6 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+        />
+      </head>
       <body className="font-primary bg-primary text-white">
         <Header />
         <StairTransition />
