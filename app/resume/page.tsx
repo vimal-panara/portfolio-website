@@ -1,6 +1,11 @@
 "use client";
 
-import { FaHtml5 } from "react-icons/fa";
+import { FaGitAlt, FaHtml5, FaPython, FaReact } from "react-icons/fa";
+import { SiDotnet, SiMongodb, SiMicrosoftazure, SiPostman, SiVisualstudio, SiCsharp } from "react-icons/si";
+import { GrDocker } from "react-icons/gr";
+import { DiMsqlServer } from "react-icons/di";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaGolang } from "react-icons/fa6";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -9,7 +14,8 @@ import { motion } from "framer-motion";
 // about section
 const aboutData = {
 	title: "About me",
-	description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, veniam.",
+	// description: "Dynamic and highly skilled Software Engineer with extensive experience in backend development, particularly with .NET technologies. Proficient in developing scalable and high-performance web applications using .NET, Entity Framework, and SQL Server. Proven ability to streamline processes and enhance system reliability through innovative solutions and effective collaboration with cross-functional teams.",
+	description: "",
 	info: [
 		{
 			fieldName: "Name",
@@ -41,59 +47,34 @@ const aboutData = {
 // experience section
 const experienceData = {
 	title: "My Experience",
-	description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam iste recusandae vel adipisci temporibus.",
+	description: "",
 	items: [
 		{
-			company: "Livlong 365 (Formarly IIFL Insurance)",
+			company: "Livlong 365 (Formerly known as IIFL Corporate Services Limited)",
 			position: "Software Engineer",
 			duration: "Aug 2022 - Present"
 		},
-		{
-			company: "Livlong 365 (Formarly IIFL Insurance)",
-			position: "Software Engineer",
-			duration: "Aug 2022 - Present"
-		},
-		{
-			company: "Livlong 365 (Formarly IIFL Insurance)",
-			position: "Software Engineer",
-			duration: "Aug 2022 - Present"
-		},
-		{
-			company: "Livlong 365 (Formarly IIFL Insurance)",
-			position: "Software Engineer",
-			duration: "Aug 2022 - Present"
-		},
-		{
-			company: "Livlong 365 (Formarly IIFL Insurance)",
-			position: "Software Engineer",
-			duration: "Aug 2022 - Present"
-		},
-		{
-			company: "Livlong 365 (Formarly IIFL Insurance)",
-			position: "Software Engineer",
-			duration: "Aug 2022 - Present"
-		}
 	]
 }
 
 // education section
 const educationData = {
 	title: "My Education",
-	description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, mollitia!",
+	description: "",
 	items: [
 		{
 			institute: "Indian Institute of Technology Gandhinagar (IIT Gandhinagar)",
-			degree: "M.Tech",
+			degree: "M.Tech (8.8/10)",
 			duration: "Aug 2020 - July 2022"
 		},
 		{
 			institute: "Institue of Infrastructure Technology Research And Mangement (IITRAM) Ahmedabad",
-			degree: "B.Tech",
+			degree: "B.Tech (9.08/10)",
 			duration: "Aug 2016 - July 2020"
 		},
 		{
 			institute: "Jawahar Navodaya Vidhyalaya Aliabada (JNV Jamnagar)",
-			degree: "HSC",
+			degree: "HSC (93%)",
 			duration: "May 2015 - May 2016"
 		},
 	]
@@ -102,24 +83,64 @@ const educationData = {
 // skilss section
 const skillsData = {
 	title: "My Skils",
-	description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil corrupti perferendis pariatur.",
+	description: "",
 	items: [
 		{
-			icon: <FaHtml5 />,
-			name: "html 5",
+			icon: <SiDotnet />,
+			name: ".Net",
 		},
 		{
-			icon: <FaHtml5 />,
-			name: "html 5",
+			icon: <SiCsharp />,
+			name: "c#",
 		},
 		{
-			icon: <FaHtml5 />,
-			name: "html 5",
+			icon: <SiDotnet />,
+			name: "Entity Framework",
 		},
 		{
-			icon: <FaHtml5 />,
-			name: "html 5",
+			icon: <DiMsqlServer />,
+			name: "MS Sql Server",
 		},
+		{
+			icon: <GrDocker />,
+			name: "Docker",
+		},
+		{
+			icon: <SiMicrosoftazure />,
+			name: "Azure Pub Sub"
+		},
+		{
+			icon: <SiMongodb />,
+			name: "MongoDb",
+		},
+		{
+			icon: <FaReact />,
+			name: "ReactJs"
+		},
+		{
+			icon: <TbBrandNextjs />,
+			name: "NextJs"
+		},
+		{
+			icon: <FaGitAlt />,
+			name: "Git"
+		},
+		{
+			icon: <SiPostman />,
+			name: "Postman"
+		},
+		{
+			icon: <SiVisualstudio />,
+			name: "Visual Studio"
+		},
+		{
+			icon: <FaGolang />,
+			name: "Golang"
+		},
+		{
+			icon: <FaPython />,
+			name: "Python"
+		}
 	]
 }
 
